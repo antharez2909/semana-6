@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff8e8;          /* fondo crema claro */
+  padding: 30px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.campo {
+  margin-bottom: 22px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.mensaje {
+  font-size: 0.85rem;
+  margin-top: 5px;
+  display: block;
+  min-height: 1.2em;
+}
+
+.exito {
+  margin-top: 20px;
+  padding: 12px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Estados */
+input.bien {
+  border-color: #4CAF50;
+  color: #2e7d32;           /* texto verde cuando está correcto */
+  background: #f6fff6;
+}
+
+input.mal {
+  border-color: #e53935;
+  color: #c62828;           /* texto rojo cuando está mal */
+  background: #fff5f5;
+}
+
+.boton {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#btnEnviar {
+  background: #4CAF50;
+  color: white;
+}
+
+#btnEnviar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button[type="reset"] {
+  background: #757575;
+  color: white;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
